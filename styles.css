@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #59331d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 10px solid #d98555;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+nav .logo img {
+  max-width: 150px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+}
+
+figure {
+  flex-basis: 100%;
+  margin: 3rem 0;
+  background-color: #59331d;
+  border-radius: 10px;
+}
+
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+.button:hover {
+  background-color: #f2f2f2;
+  color: #59331d;
+}
+
+footer {
+  background-color: #082B59; /* Set background color */
+  color: #f2f2f2; /* Change text color for contrast */
+  text-align: center; /* Center align text */
+  border-top: 10px solid #d98555; /* Border for footer */
+  padding: 20px; /* Add some padding */
+  position: relative; /* Ensure proper positioning */
+  bottom: 0; /* Align at the bottom */
+  width: 100%; /* Full width */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media (max-width: 1023px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  figure {
+    margin-top: 2rem;
+  }
+
+  article {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .product-grid {
+    grid-template-columns: 1fr;  
+  }
+
+  .product-item {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .product-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .product-details p {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  nav li {
+    margin: 0 0.5rem 1rem 0.5rem;
+  }
+}
